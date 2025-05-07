@@ -5,26 +5,3 @@ module ReverseModule
         string reverse_string(in string str);
     };
 };
-
-
-
-
-
-javac --module-path "C:\Users\Asus\Downloads\javafx\javafx-sdk-24.0.1\lib" --add-modules javafx.controls,javafx.fxml,javafx.graphics -d target\classes src\main\java\com\example\*.java
-target
-
-java --module-path "C:\Users\Asus\Downloads\javafx\javafx-sdk-24.0.1\lib" --add-modules javafx.controls,javafx.fxml,javafx.graphics -cp target\classes com.example.Main
-
-
-
-3 errors
-
-C:\Users\Asus\Downloads\DS_Game\distributed-voting-system-main>javac -d target\classes src\main\java\com\example\GameServer.java src\main\java\com\example\GameClient.java src\main\java\com\example\GameLauncher.java
-error: module not found: javafx.graphics
-error: module not found: javafx.fxml
-error: module not found: javafx.controls
-3 errors
-                                                               javac -d target\classes src\main\java\com\example\GameServer.java src\main\java\com\example\GameClient.java src\main\java\com\example\GameLauncher.java
-error: module not found: javafx.graphics
-error: module not found: javafx.fxml
-error: module not found: javafx.controls
