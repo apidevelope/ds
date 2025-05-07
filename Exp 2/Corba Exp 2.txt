@@ -1,0 +1,14 @@
+# 1. Generate Java stubs and skeletons from IDL
+idlj -fall ReverseModule.idl
+
+# 2. Compile all Java files
+javac *.java ReverseModule/*.java
+
+# 3. Start ORB daemon
+orbd -ORBInitialPort 1050 &
+
+# 4. Start the CORBA server
+java ReverseServer -ORBInitialPort 1050 -ORBInitialHost localhost &
+
+# 5. Run the CORBA client
+java ReverseClient -ORBInitialPort 1050 -ORBInitialHost localhost
