@@ -88,6 +88,9 @@ public class Berkeley {
 
 commands :
 
-javac *.java
-java Berkeley
+t0: javac *.java
+
+t1: java Berkeley client 1
+t2: java Berkeley client 2
+t3: java Berkeley
 
